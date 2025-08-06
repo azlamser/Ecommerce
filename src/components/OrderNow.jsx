@@ -30,35 +30,35 @@ don.alignItem="center"
   return (
     <>
       <div ref={hide}>
-        <div className="h-[300px] w-[500px] shadow-2xl rounded-3xl m-auto mt-[50px]">
-          <h3 className="text-center text-3xl uppercase font-[700] underline">order detail</h3>
-          <div className="flex justify-evenly items-center">
+        <div className="h-full w-[300px] shadow-2xl rounded-3xl m-auto mt-[50px] flex flex-col">
+          <h3 className="text-center text-2xl uppercase font-[700] underline">order detail</h3>
+          <div className="flex flex-col justify-center text-center m-4 ">
             <div>
               <BoyDetail />
             </div>
             <h3 className="font-[500]">
               <span>
-                <pre>price:          $999</pre>
+                <pre>price:      $999</pre>
               </span>
               <br />
               <span>
-                <pre>discount:       15%</pre>
+                <pre>discount:     15%</pre>
               </span>
               <br />
               <span>
-                <pre>total:          ${999 - (999 * 15) / 100}</pre>
+                <pre>total:     ${999 - (999 * 15) / 100}</pre>
               </span>
             </h3>
           </div>
         </div>
         <div className="text-center" ref={btnHide}>
           <button
-            className="p-3 rounded-2xl bg-blue-600 text-white m-5 hover:bg-blue-900"
+            className="p-3 rounded-2xl bg-blue-600 text-white m-5 hover:bg-blue-900 text-base"
             onClick={orderDone}
           >
             Order Now
           </button>
-          <button className="p-3 rounded-2xl bg-red-600 text-white m-5">
+          <button className=" text-base p-3 rounded-2xl bg-red-600 text-white m-5  hover:bg-red-900 ">
             Cancel
           </button>
         </div>
@@ -66,7 +66,7 @@ don.alignItem="center"
 
       <div
         ref={done}
-        style={{ display: "none" }} // initially hidden
+        style={{ display: "none" }}
       >
         Order Successful
       </div>
