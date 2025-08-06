@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+.link{
+    @apply text-base p-3 font-sans font-bold;
+}
+.box{
+    @apply text-base font-serif m-2 p-4 rounded-xl  text-black shadow-xl
+    font-serif text-[900] hover:bg-orange-300 cursor-pointer uppercase;
+
+}
